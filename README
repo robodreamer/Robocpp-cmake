@@ -1,0 +1,45 @@
+Date: Oct 3rd, 2013
+This is a c++ library of kinematic and dynamic computations for humanoid robots. Currently, Hubo II+ and DRC-Hubo robots are supported. 
+
+Currently, following features are supported:
+
+$sudo ./Robocpp
+
+--------------------- Robocpp --------------------
+|  Functions written for ladder climbing event   |
+|                                                |
+|  (Support: H. Andy Park  andypark@purdue.edu)  |
+--------------------------------------------------
+
+ Usages: 
+1. Init Position Correction
+	 $sudo ./Robocpp InitPos
+
+2. Init Orientation Correction
+	 $sudo ./Robocpp InitOri
+
+3. Grasping Position/Orientation Correction
+	 $sudo ./Robocpp Grasp
+
+4. Go to init configuration from current one
+	 $sudo ./Robocpp init
+
+for 3 and 4, enable compliance with "-c" flag
+
+ Additional Features: 
+@ Get encoder/ref reading for a specific joint
+	 $sudo ./Robocpp read JOINT_NAME
+
+@ Get joint angle for a specific joint in a motion file w/ specific line number
+	 $sudo ./Robocpp readfile JOINT_NAME FILENAME LINE_NUMBER
+
+@ Move a joint from current position to a desired position
+	 $sudo ./Robocpp move JOINT_NAME DESIRED_POSITION
+
+@ Move a joint from current position to the desired position
+	 in a specific line number in a specific file
+	 $sudo ./Robocpp movefile JOINT_NAME FILENAME LINE_NUMBER
+
+@ Move a joint from current position to the reference position
+	 $sudo ./Robocpp move2ref JOINT_NAME
+
