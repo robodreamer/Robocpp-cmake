@@ -1,0 +1,3 @@
+// this file is to tell whether the hubo-ach should run virtually or not
+// simulation 1, robot 2
+1
